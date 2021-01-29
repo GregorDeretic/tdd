@@ -8,35 +8,19 @@ class StringSplitter
     splitString( stringToSplit )
     {
         var result = [];
-        var tempResult = stringToSplit.split(',')
 
-        if( tempResult.length > 0 )
-            result = tempResult;
+        if( stringToSplit.length > 0 )
+        {
+            var tempResult = stringToSplit.split( ',' );
+            if( tempResult.length > 0 )
+                result = tempResult;
+        }
         
-        if (stringToSplit.length < 1)
-            result = []
 
         return result;
     }
 }
 
-// class StringSplitter
-// {
-//     splitString( stringToSplit )
-//     {
-//         var result = [];
-//         var tempResult = stringToSplit.split( ',' );
-//         console.log("tempResult:");
-//         console.log( tempResult );
-//         console.log(tempResult.length );
-
-//         if( tempResult.length > 0 )
-//             result = tempResult;
-
-//         return result;
-
-//     }
-// }
 
 
 describe('Splitting a string', function() {
