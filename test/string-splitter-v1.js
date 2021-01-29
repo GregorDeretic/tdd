@@ -7,7 +7,7 @@ class StringSplitter
     splitString( stringToSplit )
     {
         var result = null;
-        
+
         if (stringToSplit.length < 1)
             result = []
 
@@ -15,7 +15,7 @@ class StringSplitter
     }
 }
 
-describe('Splitting a string', function() {
+describe('Splitting a string 1', function() {
     it('Input an empty string, return an empty array []', function() {
         // arrange...
         var cut = new StringSplitter();
